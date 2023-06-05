@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "offline": "sls offline --verbose",
+    "deploy": "sls deploy",
+    "start": "webpack && node ./.webpack/index.js",
+    "test": "webpack && node ./.webpack/test.js",
+    "seed-db": "webpack && node ./.webpack/seed-db.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "@as-integrations/aws-lambda": "^2.0.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "knex": "^2.4.2",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.11",
+    "pg": "^8.11.0",
+    "square": "^27.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "babel-preset-env": "^1.7.0",
+    "serverless-offline": "^12.0.4",
+    "serverless-webpack": "^5.11.0",
+    "webpack-cli": "^5.1.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

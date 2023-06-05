@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "KaKi-Manager",
+    "slug": "KaKi-Manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "KaKi",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow KaKi Manager to access scan and apply coupon codes.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      },
+      "bundleIdentifier": "com.anonymous.KaKiManager"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "package": "com.anonymous.KaKiManager"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow KaKi Manager to access scan and apply coupon codes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2e8c1bae-e6ca-404d-a4fb-347083153a10"
+      }
+    }
+  }
+}

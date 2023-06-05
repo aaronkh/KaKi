@@ -1,0 +1,32 @@
+service: graphql-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+
+plugins:
+  - serverless-offline
+  - serverless-webpack
+
+custom:
+  serverless-offline:
+    port: 4000
+  webpack:
+    includeModules: true
+  
+functions:
+  graphql:
+    handler: index.gqlHandler
+    events: 
+    - http:
+        path: graphql
+        method: post
+        cors: true
+  oauth:
+    handler: index.oauthHandler
+    events:
+    - http:
+        path: oauth
+        method: get

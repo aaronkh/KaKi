@@ -1,0 +1,33 @@
+{
+
+    "version": "2",
+  
+    "headers": {
+  
+      "content-type": "application/json",
+  
+    },
+  
+    "isBase64Encoded": false,
+  
+    "rawQueryString": "",
+  
+    "requestContext": {
+  
+      "http": {
+  
+        "method": "POST",
+  
+      },
+  
+      // Other requestContext properties omitted for brevity
+  
+    },
+  
+    "rawPath": "/",
+  
+    "routeKey": "/",
+  
+    "body": "{\"operationName\": null, \"variables\": null, \"query\": \"{ hello }\"}"
+  
+  }
